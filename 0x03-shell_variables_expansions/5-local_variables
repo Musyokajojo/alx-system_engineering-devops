@@ -1,2 +1,2 @@
 #!/bin/bash
-printenv
+echo "Local Variables:"; set | grep ^[a-zA-Z] ; echo "Environment Variables:"; printenv | grep ^[a-zA-Z] ; echo "Functions:"; declare -F
