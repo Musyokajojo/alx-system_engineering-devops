@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "Local vars:\n$(declare -p)\n\nEnvironment vars:\n$(env)\n\nFunctions:\n$(declare -F)"
+printenv
