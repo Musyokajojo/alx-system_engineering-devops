@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((2#$ BEST School))
+echo "Local variables: $(set | grep '^[A-Za-z_]')\nEnvironment variables: $(env | grep '^[A-Za-z_]')\nFunctions: $(declare -F | awk '{print $3}')"
