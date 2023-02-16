@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "Local variables: $(set | grep '^[A-Za-z_]')\nEnvironment variables: $(env | grep '^[A-Za-z_]')\nFunctions: $(declare -F | awk '{print $3}')"
+echo -e "Local vars:\n$(declare -p)\n\nEnvironment vars:\n$(env)\n\nFunctions:\n$(declare -F)"
+
